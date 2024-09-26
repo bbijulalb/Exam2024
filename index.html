@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Exam System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="start-container" class="window active">
+        <img src="school.jpg" alt="School Logo" id="school-logo">
+       
+          <div id="credits" class="credits">
+        <h6>Developed by </h6>
+        <h5>BIJULAL B</h5>
+        <h6>SVMMHSS,VENDAR,KOTTARAKKARA</h6>        
+                </div>
+        <button id="start">Start Exam</button>
+    </div>
+    
+
+    <div id="student-selection-container" class="window">
+        <h2>Select Student</h2>
+        <div>
+            <label for="student-file-input">Upload Student List:</label>
+            <input type="file" id="student-file-input" accept=".xlsx">
+        </div>
+        <div id="completed-students-container">
+            <h3>Students who have completed the exam today:</h3>
+            <ul id="completed-students-list"></ul>
+        </div>
+        <select id="student-selection"></select>
+        <button id="proceed-to-upload">Proceed</button>
+    </div>
+
+
+    <div id="upload-container" class="window">
+        <h2>Upload Questions</h2>
+        <input type="file" id="file-input" accept=".xlsx">
+        <button id="start-quiz">Start Exam</button>
+    </div>
+<!-- Timer Display -->
+<div id="timer" class="timer">Time Remaining: 10:00</div>
+
+    <div id="quiz" class="window">
+        <h2>COMPUTER APPLICATION EXAM SERIES</h2>
+        <p id="question"></p>
+        <p id="max-marks"></p>
+        <textarea id="answer" rows="4" cols="50"></textarea>
+        <button id="next">Next</button>
+    </div>
+
+    <div id="results-container" class="window">
+        <h2>Results</h2>
+        <p id="student-name-display"></p>
+        <p id="date-display"></p>
+        <table id="results-table">
+            <thead>
+                <tr>
+                    <th>Question</th>
+                    <th>Answer</th>
+                    <th>Marks Obtained</th>
+                    <th>Max Marks</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+        <p id="total-marks"></p>
+        <button id="retest">Retest</button>
+        <button id="download-report">Download Report</button>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.16.9/xlsx.full.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

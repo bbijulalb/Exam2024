@@ -1,0 +1,10 @@
+[
+    {"Question": "What is HTML?", "Marks": 1},
+    {"Question": "What is CSS?", "Marks": 1},
+    {"Question": "What is JavaScript?", "Marks": 2},
+    {"Question": "Explain the box model in CSS.", "Marks": 2},
+    {"Question": "What are semantic HTML tags?", "Marks": 3},
+    {"Question": "Describe the event delegation model.", "Marks": 3},
+    {"Question": "What is the purpose of the 'defer' attribute in HTML?", "Marks": 4},
+    {"Question": "How does the browser rendering engine work?", "Marks": 4}
+]
